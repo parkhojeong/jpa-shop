@@ -19,7 +19,7 @@ public class MemberRepositoryTest {
 
     @Test
     @Transactional
-    @Rollback(true)
+    @Rollback(value = false)
     public void testMember() throws Exception {
         //given
         Member member = new Member();
